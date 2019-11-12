@@ -1,0 +1,3 @@
+#group vars for DEV
+
+g_var1: "this is from prod.yml"
