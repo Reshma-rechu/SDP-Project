@@ -1,0 +1,6 @@
+##Includes deploy.yml
+
+---
+
+- name: Including deploy.yml file
+  import_playbook: deploy.yml

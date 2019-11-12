@@ -1,0 +1,4 @@
+#group vars for DEV
+
+g_env: "{{ cli_env }}"
+

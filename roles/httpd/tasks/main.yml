@@ -1,0 +1,5 @@
+---
+# tasks file for httpd
+
+- name: Including main deployment file
+  include_tasks: "{{ ansible_os_family | lower }}_setup.yml"

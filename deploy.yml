@@ -1,0 +1,17 @@
+## deploy.yml includes deployment stuffs
+---
+- hosts: "{{ g_env }}"
+  remote_user: root
+  pre_tasks:
+    - name: Ensuring necessary details are provided
+      fail:
+        msg: "{{ item.msg }}"
+      when: item.cli_var is not defined or item.cli_var == ''
+#      no_log: true
+      with_items:
+        - { cli_var: '{{ cli_app_code | default() }}', msg: 'The cli app code is mandatory' }
+#        - { cli_var: '{{ cli_env | default() }}', msg: 'The cli_env is mandatory' }
+ 
+  roles:
+    - { role: httpd, when: cli_app_code == "httpd" }
+    - { role: mysql, when: cli_app_code == "mysql" }
