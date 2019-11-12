@@ -1,4 +1,5 @@
 #group vars for DEV
 
 g_env: "{{ cli_env }}"
+g_var1: "this is from dev.yml"
 
