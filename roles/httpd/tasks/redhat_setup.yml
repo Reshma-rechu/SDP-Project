@@ -22,9 +22,9 @@
     msg: "{{ inventory_hostname }}"
   delegate_to: localhost
   
-- name : creating directories
+- name : creating files
   file:
     path: /tmp/foo.conf
-    state: present
+    state: touch
   delegate_to: localhost
 
