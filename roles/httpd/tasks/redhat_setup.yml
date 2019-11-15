@@ -12,4 +12,9 @@
 - name: displaying variables
   debug:
     msg: "{{ g_var1 }}"
+
+- name: checking local action
+  shell: "hostname"
+  delegate_to: localhost
+
   
