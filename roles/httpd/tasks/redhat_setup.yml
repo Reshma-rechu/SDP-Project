@@ -14,7 +14,7 @@
     msg: "{{ g_var1 }}"
 
 - name: checking local action
-  shell: "hostname"
+  shell: echo $hostname
   delegate_to: localhost
 
   
