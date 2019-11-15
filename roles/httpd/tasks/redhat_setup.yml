@@ -20,5 +20,6 @@
 - name: checking ansible module
   debug:
     msg: "{{ inventory_hostname }}"
+  delegate_to: localhost
 
   
