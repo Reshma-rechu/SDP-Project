@@ -9,7 +9,7 @@
     name: httpd 
     state: started
     
-- name: displaying variables
+- name: AAAdisplaying variables 
   debug:
     msg: "{{ g_var1 }}"
 
