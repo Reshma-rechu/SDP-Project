@@ -15,7 +15,7 @@
 
 - name: checking local action
   shell: "hostname"
-  #delegate_to: localhost
+  delegate_to: localhost
   
 - name: checking ansible module
   debug:
@@ -26,5 +26,5 @@
   file:
     path: /tmp/foo.conf
     state: touch
-  #delegate_to: localhost
+  delegate_to: localhost
 
