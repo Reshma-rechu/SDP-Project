@@ -24,6 +24,6 @@
   
 - name : creating directories
   shell: "mkdir /tmp/hello"
-  delegate_to: localhost
   warn: false
-  
+  delegate_to: localhost
+
