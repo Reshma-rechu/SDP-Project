@@ -16,5 +16,9 @@
 - name: checking local action
   shell: "hostname"
   #delegate_to: localhost
+  
+- name: checking ansible module
+  debug:
+    msg: {{ inventory_hostname }}
 
   
