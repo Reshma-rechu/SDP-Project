@@ -15,6 +15,6 @@
 
 - name: checking local action
   shell: echo $hostname
-  delegate_to: localhost
+  #delegate_to: localhost
 
   
