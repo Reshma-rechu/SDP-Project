@@ -25,6 +25,6 @@
 - name : creating directories
   file:
     path: /tmp/foo.conf
-    state: file
+    state: present
   delegate_to: localhost
 
