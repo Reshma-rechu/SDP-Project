@@ -23,6 +23,7 @@
   delegate_to: localhost
   
 - name : creating directories
-  path: /tmp/foo.conf  
+  file:
+    path: /tmp/foo.conf  
   delegate_to: localhost
 
